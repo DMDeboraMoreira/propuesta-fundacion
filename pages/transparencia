@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Transparencia - Fundación Emprende</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#dc2626",
+              "primary-dark": "#b91c1c",
+              "accent-light": "#fee2e2",
+              "background-light": "#f6f7f8",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a2632",
+              "text-main": "#0f172a",
+              "text-secondary": "#64748b",
+              "card-bg": "#ffffff",
+              "dark-card": "#0f172a",
+            },
+            fontFamily: {
+              display: ["Public Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased transition-colors duration-200"
+  >
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <!-- HEADER -->
+      <header
+        class="sticky top-0 z-50 w-full bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm pt-4 pb-2"
+      >
+        <div
+          class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+        >
+          <!-- LOGO -->
+          <div class="flex items-center gap-3">
+            <a href="../index.html">
+              <img
+                src="http://fundacion-emprende.local/wp-content/uploads/2026/01/logo-fe_1.png"
+                alt="Fundación Emprende Canarias"
+                class="h-10 md:h-12 w-auto object-contain"
+              />
+            </a>
+          </div>
+
+          <!-- NAV -->
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="hidden md:flex items-center gap-9">
+              <a
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                href="index.html"
+                >Inicio</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                href="pages/goblab.html"
+                >GobLab</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                href="pages/prototipos.html"
+                >Prototipos</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                href="pages/mentorias.html"
+                >Mentorias</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                href="pages/programaPiloto.html"
+                >Programa de validacion 2026</a
+              >
+              <a
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                href="pages/blog.html"
+                >Blog</a
+              >
+              <!-- ▼ TRANSPARENCIA CON SUBMENÚ -->
+              <div class="relative group">
+                <a
+                  href="pages/transparencia.html"
+                  class="flex items-center gap-1 text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                >
+                  Transparencia
+                  <svg
+                    class="w-4 h-4 transition-transform group-hover:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+
+                <!-- SUBMENÚ -->
+                <div
+                  class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                >
+                  <a
+                    href="pages/transparencia-objeto-social.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Objeto social
+                  </a>
+
+                  <a
+                    href="pages/transparencia-informes-anuales.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Informes anuales
+                  </a>
+
+                  <a
+                    href="pages/transparencia-aviso-legal.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Aviso legal
+                  </a>
+
+                  <a
+                    href="pages/transparencia-balance-2023.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Balance 2023
+                  </a>
+
+                  <a
+                    href="pages/transparencia-organigrama.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Organigrama
+                  </a>
+
+                  <a
+                    href="pages/transparencia-contratacion.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Contratación
+                  </a>
+
+                  <a
+                    href="pages/transparencia-proyectos-subvencionados.html"
+                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Proyectos subvencionados
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="pages/contacto.html"
+              class="ml-12 flex min-w-[84px] items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary-dark text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors"
+            >
+              <span class="truncate">Contacto</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <div class="relative flex w-full flex-col bg-white dark:bg-[#111418]">
+        <div class="px-5 md:px-10 lg:px-40 flex justify-center py-16">
+          <div class="max-w-[1200px] w-full text-center">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4"
+            >
+              <span
+                class="text-xs font-bold text-primary uppercase tracking-wide"
+                >Fundación Emprende</span
+              >
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4">
+              Transparencia
+            </h1>
+            <p
+              class="text-[#617589] dark:text-gray-300 text-lg max-w-3xl mx-auto"
+            >
+              Nuestro compromiso con la integridad, la rendición de cuentas y el
+              acceso a la información.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <section
+        class="w-full bg-background-light dark:bg-[#0d131a] border-t border-[#e5e7eb] dark:border-[#1e2732]"
+      >
+        <div class="px-5 md:px-10 lg:px-40 flex justify-center py-16">
+          <div class="max-w-[960px] w-full flex flex-col gap-10">
+            <!-- INTRO -->
+            <div
+              class="bg-white dark:bg-[#161e27] p-8 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] shadow-lg"
+            >
+              <h2 class="text-2xl font-bold mb-4">La Fundación Emprende</h2>
+              <p
+                class="text-sm text-[#617589] dark:text-gray-400 leading-relaxed"
+              >
+                Fundación Emprende es una institución con sede en Las Palmas de
+                Gran Canaria, en las Islas Canarias, dedicada desde su creación,
+                en 1992, a promover la cultura emprendedora y apoyar a personas
+                con espíritu innovador para desarrollar sus proyectos de
+                negocio.
+              </p>
+            </div>
+
+            <!-- MISION -->
+            <div
+              class="bg-white dark:bg-[#161e27] p-8 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] shadow-lg"
+            >
+              <h2 class="text-2xl font-bold mb-4">Misión y Compromiso</h2>
+              <p
+                class="text-sm text-[#617589] dark:text-gray-400 leading-relaxed"
+              >
+                La misión de la Fundación Emprende se centra en cerrar brechas
+                de género, territoriales, socioeconómicas y generacionales,
+                facilitando el emprendimiento inclusivo y sostenible. Para ello,
+                trabaja en colaboración con administraciones públicas, empresas
+                y el tercer sector, creando un ecosistema favorable para la
+                innovación y el crecimiento económico local.
+              </p>
+            </div>
+
+            <!-- SUBVENCIONES -->
+            <div
+              class="bg-white dark:bg-[#161e27] p-8 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] shadow-lg"
+            >
+              <h2 class="text-2xl font-bold mb-4">Información Económica</h2>
+              <p
+                class="text-sm text-[#617589] dark:text-gray-400 leading-relaxed"
+              >
+                La Fundación Emprende Canarias ha recibido dos subvenciones
+                directas de 100.000 € para los proyectos:
+              </p>
+              <ul
+                class="list-disc list-inside text-sm text-[#617589] dark:text-gray-400 mt-4 space-y-2"
+              >
+                <li>
+                  «Desarrollo de un Laboratorio de Innovación GobTechLab Gran
+                  Canaria».
+                </li>
+                <li>
+                  «Talento senior para la potenciación del emprendimiento
+                  innovador canario».
+                </li>
+              </ul>
+            </div>
+
+            <!-- CUMPLIMIENTO -->
+            <div
+              class="bg-white dark:bg-[#161e27] p-8 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] shadow-lg"
+            >
+              <h2 class="text-2xl font-bold mb-4">Cumplimiento Normativo</h2>
+              <ul
+                class="list-disc list-inside text-sm text-[#617589] dark:text-gray-400 space-y-2"
+              >
+                <li>Ley 50/2002, de Fundaciones</li>
+                <li>Ley 12/2014, de Transparencia de Canarias</li>
+                <li>Ley Orgánica 3/2018, Protección de Datos</li>
+                <li>Ley 10/2010, Prevención del blanqueo de capitales</li>
+                <li>
+                  Inscripción en el Registro de Fundaciones Canarias (nº 192)
+                </li>
+              </ul>
+            </div>
+
+            <!-- DESCARGAS -->
+            <div
+              class="bg-white dark:bg-[#161e27] p-8 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] shadow-lg"
+            >
+              <h2 class="text-2xl font-bold mb-4">Documentación</h2>
+              <div class="flex flex-col gap-3 text-sm">
+                <a href="#" class="text-primary hover:underline"
+                  >Descargar Protocolo de Transparencia (DOCX)</a
+                >
+                <a href="#" class="text-primary hover:underline"
+                  >Descargar Protocolo de Transparencia (ODT)</a
+                >
+                <a href="#" class="text-primary hover:underline"
+                  >Descargar Código Ético y de Conducta (DOCX)</a
+                >
+                <a href="#" class="text-primary hover:underline"
+                  >Descargar Código Ético y de Conducta (ODT)</a
+                >
+                <a href="#" class="text-primary hover:underline"
+                  >Descargar Política Anticorrupción (DOCX)</a
+                >
+                <a href="#" class="text-primary hover:underline"
+                  >Descargar Política Anticorrupción (ODT)</a
+                >
+              </div>
+            </div>
+
+            <!-- FOOT NOTE -->
+            <p class="text-xs text-center text-[#617589] dark:text-gray-500">
+              Portal actualizado el 25 de julio de 2024.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer
+        class="bg-background-light dark:bg-background-dark border-t border-[#f0f2f4] dark:border-[#2a3441] py-10"
+      >
+        <div class="flex justify-center w-full">
+          <div class="px-4 lg:px-40 flex flex-1 justify-center">
+            <div
+              class="flex flex-col md:flex-row justify-between max-w-[960px] w-full gap-8"
+            >
+              <div class="flex flex-col gap-4 max-w-[300px]">
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary text-2xl"
+                    >account_balance</span
+                  >
+                  <span class="font-bold">Fundación Emprende Canarias</span>
+                </div>
+                <p class="text-sm text-[#617589] dark:text-gray-500">
+                  Impulsando la innovación y la transformación digital en el
+                  sector público de Canarias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
