@@ -61,7 +61,7 @@
           <div class="flex items-center gap-3">
             <a href="../index.html">
               <img
-                src="http://fundacion-emprende.local/wp-content/uploads/2026/01/logo-fe_1.png"
+                src="https://res.cloudinary.com/dmtoxfuax/image/upload/v1768399818/logo-fe_1_cql7m6.png"
                 alt="Fundación Emprende Canarias"
                 class="h-10 md:h-12 w-auto object-contain"
               />
@@ -72,40 +72,41 @@
           <div class="flex flex-1 justify-end gap-8">
             <div class="hidden md:flex items-center gap-9">
               <a
-                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 href="index.html"
                 >Inicio</a
               >
               <a
-                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 href="pages/goblab.html"
                 >GobLab</a
               >
               <a
-                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 href="pages/prototipos.html"
                 >Prototipos</a
               >
               <a
-                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 href="pages/mentorias.html"
                 >Mentorias</a
               >
               <a
-                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 href="pages/programaPiloto.html"
                 >Programa de validacion 2026</a
               >
               <a
-                class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 href="pages/blog.html"
                 >Blog</a
               >
-              <!-- ▼ TRANSPARENCIA CON SUBMENÚ -->
+
+              <!-- TRANSPARENCIA CON SUBMENÚ -->
               <div class="relative group">
                 <a
                   href="pages/transparencia.html"
-                  class="flex items-center gap-1 text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
+                  class="flex items-center gap-1 text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary"
                 >
                   Transparencia
                   <svg
@@ -123,94 +124,87 @@
                   </svg>
                 </a>
 
-                <!-- SUBMENÚ -->
                 <div
                   class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                 >
                   <a
                     href="pages/transparencia-objeto-social.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Objeto social</a
                   >
-                    Objeto social
-                  </a>
-
                   <a
                     href="pages/transparencia-informes-anuales.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Informes anuales</a
                   >
-                    Informes anuales
-                  </a>
-
                   <a
                     href="pages/transparencia-aviso-legal.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Aviso legal</a
                   >
-                    Aviso legal
-                  </a>
-
                   <a
                     href="pages/transparencia-balance-2023.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Balance 2023</a
                   >
-                    Balance 2023
-                  </a>
-
                   <a
                     href="pages/transparencia-organigrama.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Organigrama</a
                   >
-                    Organigrama
-                  </a>
-
                   <a
                     href="pages/transparencia-contratacion.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Contratación</a
                   >
-                    Contratación
-                  </a>
-
                   <a
                     href="pages/transparencia-proyectos-subvencionados.html"
-                    class="hover:text-primary block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700"
+                    >Proyectos subvencionados</a
                   >
-                    Proyectos subvencionados
-                  </a>
                 </div>
               </div>
             </div>
 
             <a
               href="pages/contacto.html"
-              class="ml-12 flex min-w-[84px] items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary-dark text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors"
+              class="ml-12 flex min-w-[84px] items-center justify-center rounded-lg h-10 px-4 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-colors"
             >
-              <span class="truncate">Contacto</span>
+              Contacto
             </a>
           </div>
         </div>
       </header>
 
-      <!-- HERO -->
-      <div class="relative flex w-full flex-col bg-white dark:bg-[#111418]">
-        <div class="px-5 md:px-10 lg:px-40 flex justify-center py-16">
-          <div class="max-w-[1200px] w-full text-center">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 mb-4"
+      <!-- HERO CON IMAGEN -->
+      <div
+        class="relative w-full h-[360px] md:h-[420px] flex items-center justify-center"
+      >
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="
+            background-image: url('https://www.construar.com.ar/wp-content/uploads/2017/03/Transparencia-p%C3%BAblica.jpg');
+          "
+        ></div>
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="relative z-10 text-center px-5 max-w-4xl">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 mb-4"
+          >
+            <span class="text-xs font-bold text-white uppercase tracking-wide"
+              >Fundación Emprende</span
             >
-              <span
-                class="text-xs font-bold text-primary uppercase tracking-wide"
-                >Fundación Emprende</span
-              >
-            </div>
-            <h1 class="text-4xl md:text-5xl font-black tracking-tight mb-4">
-              Transparencia
-            </h1>
-            <p
-              class="text-[#617589] dark:text-gray-300 text-lg max-w-3xl mx-auto"
-            >
-              Nuestro compromiso con la integridad, la rendición de cuentas y el
-              acceso a la información.
-            </p>
           </div>
+          <h1
+            class="text-4xl md:text-5xl font-black tracking-tight mb-4 text-white"
+          >
+            Transparencia
+          </h1>
+          <p class="text-white/90 text-lg max-w-3xl mx-auto">
+            Nuestro compromiso con la integridad, la rendición de cuentas y el
+            acceso a la información.
+          </p>
         </div>
       </div>
 
@@ -246,10 +240,7 @@
               >
                 La misión de la Fundación Emprende se centra en cerrar brechas
                 de género, territoriales, socioeconómicas y generacionales,
-                facilitando el emprendimiento inclusivo y sostenible. Para ello,
-                trabaja en colaboración con administraciones públicas, empresas
-                y el tercer sector, creando un ecosistema favorable para la
-                innovación y el crecimiento económico local.
+                facilitando el emprendimiento inclusivo y sostenible.
               </p>
             </div>
 
@@ -290,13 +281,11 @@
                 <li>Ley 12/2014, de Transparencia de Canarias</li>
                 <li>Ley Orgánica 3/2018, Protección de Datos</li>
                 <li>Ley 10/2010, Prevención del blanqueo de capitales</li>
-                <li>
-                  Inscripción en el Registro de Fundaciones Canarias (nº 192)
-                </li>
+                <li>Registro de Fundaciones Canarias (nº 192)</li>
               </ul>
             </div>
 
-            <!-- DESCARGAS -->
+            <!-- DOCUMENTOS -->
             <div
               class="bg-white dark:bg-[#161e27] p-8 rounded-xl border border-[#dbe0e6] dark:border-[#2a3441] shadow-lg"
             >
@@ -309,53 +298,20 @@
                   >Descargar Protocolo de Transparencia (ODT)</a
                 >
                 <a href="#" class="text-primary hover:underline"
-                  >Descargar Código Ético y de Conducta (DOCX)</a
+                  >Descargar Código Ético (DOCX)</a
                 >
                 <a href="#" class="text-primary hover:underline"
-                  >Descargar Código Ético y de Conducta (ODT)</a
-                >
-                <a href="#" class="text-primary hover:underline"
-                  >Descargar Política Anticorrupción (DOCX)</a
-                >
-                <a href="#" class="text-primary hover:underline"
-                  >Descargar Política Anticorrupción (ODT)</a
+                  >Descargar Código Ético (ODT)</a
                 >
               </div>
             </div>
 
-            <!-- FOOT NOTE -->
             <p class="text-xs text-center text-[#617589] dark:text-gray-500">
               Portal actualizado el 25 de julio de 2024.
             </p>
           </div>
         </div>
       </section>
-
-      <!-- FOOTER -->
-      <footer
-        class="bg-background-light dark:bg-background-dark border-t border-[#f0f2f4] dark:border-[#2a3441] py-10"
-      >
-        <div class="flex justify-center w-full">
-          <div class="px-4 lg:px-40 flex flex-1 justify-center">
-            <div
-              class="flex flex-col md:flex-row justify-between max-w-[960px] w-full gap-8"
-            >
-              <div class="flex flex-col gap-4 max-w-[300px]">
-                <div class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary text-2xl"
-                    >account_balance</span
-                  >
-                  <span class="font-bold">Fundación Emprende Canarias</span>
-                </div>
-                <p class="text-sm text-[#617589] dark:text-gray-500">
-                  Impulsando la innovación y la transformación digital en el
-                  sector público de Canarias.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
