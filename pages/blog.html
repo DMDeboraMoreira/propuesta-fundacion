@@ -1,63 +1,88 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
-<head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Blog – Fundación Emprende</title>
 
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#dc2626",
-            "primary-dark": "#b91c1c",
-            "accent-light": "#fee2e2",
-            "background-light": "#f6f7f8",
-            "surface-light": "#ffffff",
-            "surface-dark": "#1a2632",
-            "text-main": "#0f172a",
-            "text-secondary": "#64748b"
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              // "primary": "#1351ec", 
+              // "primary-dark": "#0f3cb3",
+              // "accent-light": "#e0e7ff",
+              // "background-light": "#ffffff",
+              // "background-dark": "#101922",
+                "primary": "#dc2626",          // antes #1351ec
+                "primary-dark": "#b91c1c",     // antes #0f3cb3
+                "accent-light": "#fee2e2",     // rojo claro (antes azul claro)
+                "background-light": "#f6f7f8", // gris claro como ellos
+
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a2632",
+              "text-main": "#0f172a",
+              "text-secondary": "#64748b",
+              "card-bg": "#ffffff",
+              "dark-card": "#0f172a"
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.25rem", 
+                "lg": "0.5rem", 
+                "xl": "0.75rem", 
+                "2xl": "1.5rem",
+                "3xl": "2rem",
+                "full": "9999px"
+            },
+            boxShadow: {
+                'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02)',
+                'card': '0 10px 40px -10px rgba(0,0,0,0.05)',
+                'card-hover': '0 20px 40px -10px rgba(0,0,0,0.1)'
+            }
           },
-          fontFamily: {
-            "display": ["Public Sans", "sans-serif"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem", 
-            "lg": "0.5rem", 
-            "xl": "0.75rem", 
-            "2xl": "1.5rem"
-          },
-          boxShadow: {
-            'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02)',
-            'card': '0 10px 40px -10px rgba(0,0,0,0.05)',
-            'card-hover': '0 20px 40px -10px rgba(0,0,0,0.1)'
-          }
         },
-      },
-    }
-  </script>
+      }
+    </script>
+
+
 </head>
 
-<body class="font-display bg-background-light dark:bg-[#0d131a] text-text-main dark:text-white antialiased transition-colors duration-200">
+<!-- <body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white">
+
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden"> -->
+
+
+  
+<body class="font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased transition-colors duration-200">
 
 <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 
-<!-- HEADER -->
-<header class="sticky top-0 z-50 w-full bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm pt-4 pb-2">
-  <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
-    <!-- LOGO -->
+
+<!-- ================= HEADER ================= -->
+<header class="sticky top-0 z-50 w-full bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm pt-4 pb-2">
+
+  <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
+
+      <!-- LOGO -->
     <div class="flex items-center gap-3">
-      <a href="/home">
+      <a href="../index.html">
         <img 
           src="https://res.cloudinary.com/dmtoxfuax/image/upload/v1768399818/logo-fe_1_cql7m6.png" 
           alt="Fundación Emprende Canarias"
@@ -66,90 +91,202 @@
       </a>
     </div>
 
-    <!-- NAV -->
- <div class="flex flex-1 justify-end gap-8">
-  <div class="hidden md:flex items-center gap-9">
-    <a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
-       href="../index.html">Inicio</a>
-
-    <a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
-       href="../pages/goblab.html">GobLab</a>
-
-    <a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
-       href="../pages/prototipos.html">Prototipos</a>
-
-    <a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
-       href="../pages/mentorias.html">Mentorias</a>
-
-    <a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
-       href="../pages/programaPiloto.html">Programa de validacion 2026</a>
-
-    <a class="text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary"
-       href="../pages/blog.html">Blog</a>
-
-    <!-- ▼ TRANSPARENCIA CON SUBMENÚ -->
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="../index.html" class="hover:text-primary">Inicio</a>
+      <a href="goblab.html" class="hover:text-primary">GobLab</a>
+      <a href="prototipos.html" class="hover:text-primary">Prototipos</a>
+      <a href="mentorias.html" class="hover:text-primary">Mentorías</a>
+      <a href="programaPiloto.html" class="hover:text-primary">Programa 2026</a>
+      <a href="blog.html" class="hover:text-primary">Blog</a>
+      
+      <!-- ▼ TRANSPARENCIA CON SUBMENÚ -->
     <div class="relative group">
-      <a href="../pages/transparencia.html"
-         class="flex items-center gap-1 text-[#111418] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary">
-        Transparencia
-        <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
-             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M19 9l-7 7-7-7"/>
-        </svg>
-      </a>
+        <a href="transparencia.html"
+     class="flex items-center gap-1 hover:text-primary">
+    Transparencia
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
 
       <!-- SUBMENÚ -->
       <div
         class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
       >
-        <a href="../pages/transparencia-objeto-social.html"
+        <a href="transparencia/objeto-social.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Objeto social
         </a>
 
-        <a href="../pages/transparencia-informes-anuales.html"
+        <a href="transparencia/informes-anuales.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Informes anuales
         </a>
 
-        <a href="../pages/transparencia-aviso-legal.html"
+        <a href="transparencia/aviso-legal.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Aviso legal
         </a>
 
-        <a href="../pages/transparencia-balance-2023.html"
+        <a href="transparencia/balance-2023.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Balance 2023
         </a>
 
-        <a href="../pages/transparencia-organigrama.html"
+        <a href="transparencia/organigrama.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Organigrama
         </a>
 
-        <a href="../pages/transparencia-contratacion.html"
+        <a href="transparencia/contratacion.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Contratación
         </a>
 
-        <a href="../pages/transparencia-proyectos-subvencionados.html"
+        <a href="transparencia/proyectos-subvencionados.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
           Proyectos subvencionados
         </a>
       </div>
     </div>
-  </div>
+    </nav>
 
-  <!-- BOTÓN CONTACTO -->
-  <a href="../pages/contacto.html"
-     class="ml-12 flex min-w-[84px] items-center justify-center rounded-lg h-10 px-4 bg-primary hover:bg-primary-dark text-white text-sm font-bold transition-colors">
-    <span class="truncate">Contacto</span>
+    <!-- Contacto -->
+    <a href="contacto.html"
+       class="hidden md:flex h-10 items-center justify-center rounded-lg bg-primary px-4 text-sm font-bold text-white hover:bg-primary-dark">
+      Contacto
+    </a>
+
+
+<div class="flex items-center gap-2 md:hidden"> 
+  <a href="contacto.html"
+     class="h-9 px-3
+            flex items-center justify-center
+            rounded-lg bg-primary
+            text-xs font-bold text-white
+            hover:bg-primary-dark">
+    Contacto
   </a>
+
+  <button id="menuBtn">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+  </button>
 </div>
 
+
+</div>
 </header>
 
+
+<!-- ================= MENÚ MÓVIL ================= -->
+<div
+  id="mobileMenu"
+  class="hidden md:hidden
+         fixed top-20 left-1/2 -translate-x-1/2 z-50
+         w-[90%] max-w-md
+         bg-white dark:bg-surface-dark
+         rounded-2xl shadow-2xl
+         border border-gray-200 dark:border-gray-700
+
+         max-h-[calc(100vh-6rem)]
+         overflow-y-auto
+
+         transition-all duration-200 ease-out
+         origin-top scale-95 opacity-0">
+
+
+  <nav class="flex flex-col divide-y divide-gray-100 text-sm">
+
+    <!-- Links principales -->
+    <a href="../index.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      Inicio
+    </a>
+
+    <a href="goblab.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      GobLab
+    </a>
+
+    <a href="prototipos.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      Prototipos
+    </a>
+
+    <a href="mentorias.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      Mentorías
+    </a>
+
+    <a href="programaPiloto.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      Programa 2026
+    </a>
+
+    <a href="blog.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      Blog
+    </a>
+
+    <a href="transparencia.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      Transparencia
+    </a>
+
+    <!-- Sección secundaria -->
+    <!-- <div class="flex items-center justify-center h-10
+            text-xs font-bold uppercase tracking-wider text-text-secondary">
+      ¿Qué hacemos?
+    </div>
+
+   <a class="flex items-center justify-center h-12
+          text-text-secondary transition-all
+          hover:bg-gray-50 hover:text-primary">
+
+      Finalidad fundacional
+    </a>
+
+    <a class="flex items-center justify-center h-12
+          text-text-secondary transition-all
+          hover:bg-gray-50 hover:text-primary">
+
+      Emprendimiento y startups
+    </a>
+
+    <a class="flex items-center justify-center h-12
+          text-text-secondary transition-all
+          hover:bg-gray-50 hover:text-primary">
+
+      Seniors y economía silver
+    </a> -->
+
+    <!-- CTA -->
+    <!-- <div class="p-4">
+      <a href="pages/contacto.html"
+         class="flex items-center justify-center h-11
+                rounded-lg bg-primary text-white
+                font-bold hover:bg-primary-dark transition-all">
+        Contactanos
+      </a>
+    </div> -->
+
+  </nav>
+</div>
+
+
+
+
+<!-- ================= CONTENIDO ================= -->
 <main class="flex-grow">
 
 <!-- HERO BLOG -->
@@ -211,84 +348,39 @@
 </main>
 
 <!-- FOOTER -->
-<footer
-        class="bg-background-light dark:bg-background-dark border-t border-[#f0f2f4] dark:border-[#2a3441] py-10"
-      >
-        <div class="layout-container flex justify-center w-full">
-          <div class="px-4 lg:px-40 flex flex-1 justify-center">
-            <div
-              class="layout-content-container flex flex-col md:flex-row justify-between max-w-[960px] flex-1 px-4 gap-8"
-            >
-              <div class="flex flex-col gap-4 max-w-[300px]">
-                <div class="flex items-center gap-3">
-                  <span class="material-symbols-outlined text-primary text-2xl"
-                    >account_balance</span
-                  >
-                  <span class="text-[#111418] dark:text-white font-bold"
-                    >Fundación Emprende Canarias</span
-                  >
-                </div>
-                <p class="text-sm text-[#617589] dark:text-gray-500">
-                  Impulsando la innovación y la transformación digital en el
-                  sector público de Canarias.
-                </p>
-              </div>
+<footer class="bg-background-light dark:bg-background-dark border-t border-[#f0f2f4] dark:border-[#2a3441] py-10">
+  <div class="layout-container flex justify-center w-full">
+    <div class="px-4 lg:px-40 flex flex-1 justify-center">
+      <div class="layout-content-container flex flex-col md:flex-row justify-between max-w-[960px] flex-1 px-4 gap-8">
 
-              <div class="flex flex-col gap-4">
-                <h4
-                  class="text-[#111418] dark:text-white font-bold text-sm uppercase tracking-wider"
-                >
-                  Enlaces
-                </h4>
-                <div class="flex flex-col gap-2">
-                  <a
-                    class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary"
-                    href="#"
-                    >Bases Legales</a
-                  >
-                  <a
-                    class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary"
-                    href="#"
-                    >Política de Privacidad</a
-                  >
-                  <a
-                    class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary"
-                    href="#"
-                    >GobLab Gran Canaria</a
-                  >
-                </div>
-              </div>
+        <div class="flex flex-col gap-4 max-w-[300px]">
+          <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-2xl">account_balance</span>
+            <span class="font-bold">Fundación Emprende Canarias</span>
+          </div>
+          <p class="text-sm text-text-secondary">Impulsando la innovación y la transformación digital en el sector público de Canarias.</p>
+        </div>
 
-              <div class="flex flex-col gap-4">
-                <h4
-                  class="text-[#111418] dark:text-white font-bold text-sm uppercase tracking-wider"
-                >
-                  Contacto
-                </h4>
-                <div class="flex flex-col gap-2">
-                  <a
-                    class="text-sm text-[#617589] dark:text-gray-400 hover:text-primary flex items-center gap-2"
-                    href="mailto:hola@emprendecanarias.org"
-                  >
-                    <span class="material-symbols-outlined text-base"
-                      >mail</span
-                    >
-                    hola@emprendecanarias.org
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="font-bold text-sm uppercase tracking-wider">Enlaces</h4>
+          <div class="flex flex-col gap-2">
+            <a class="text-sm text-text-secondary hover:text-primary" href="#">Bases Legales</a>
+            <a class="text-sm text-text-secondary hover:text-primary" href="#">Política de Privacidad</a>
+            <a class="text-sm text-text-secondary hover:text-primary" href="#">GobLab Gran Canaria</a>
           </div>
         </div>
 
-        <div
-          class="text-center mt-10 pt-6 border-t border-gray-200 dark:border-gray-800"
-        >
-          <p class="text-xs text-[#617589] dark:text-gray-600">
-            ©️ 2026 Fundación Emprende Canarias. Todos los derechos reservados.
-          </p>
+        <div class="flex flex-col gap-4">
+          <h4 class="font-bold text-sm uppercase tracking-wider">Contacto</h4>
+          <a class="text-sm text-text-secondary hover:text-primary flex items-center gap-2" href="mailto:hola@emprendecanarias.org">
+            <span class="material-symbols-outlined text-base">mail</span> hola@emprendecanarias.org
+          </a>
         </div>
-      </footer>
+
+      </div>
+    </div>
+  </div>
+</footer>
 
 <!-- SCRIPT PARA CARGAR POSTS DESDE N8N -->
 <script>
@@ -336,6 +428,32 @@ async function loadPosts() {
 
 // Llamar cuando quieras cargar desde n8n
 // loadPosts();
+</script>
+
+
+<!-- ================= JS ================= -->
+<script>
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('opacity-100');
+  menu.classList.toggle('scale-100');
+});
+</script>
+
+<script>
+document.addEventListener('click', (e) => {
+  const clickDentroDelMenu = menu.contains(e.target);
+  const clickEnBoton = btn.contains(e.target);
+
+  if (!clickDentroDelMenu && !clickEnBoton && !menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+    menu.classList.remove('opacity-100');
+    menu.classList.remove('scale-100');
+  }
+});
 </script>
 
 </body>
