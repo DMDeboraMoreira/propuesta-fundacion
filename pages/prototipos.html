@@ -57,8 +57,11 @@
 
 
 </head>
+
 <body class="font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased transition-colors duration-200">
+
 <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+  
 
 
 <!-- ================= HEADER ================= -->
@@ -66,8 +69,7 @@
 
   <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
 
-    
-      <!-- LOGO -->
+   <!-- LOGO -->
     <div class="flex items-center gap-3">
       <a href="../index.html">
         <img 
@@ -78,9 +80,55 @@
       </a>
     </div>
 
-     <!-- Desktop nav -->
+
+    <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-8">
       <a href="../index.html" class="hover:text-primary">Inicio</a>
+
+
+      <!-- <a href="#" class="hover:text-primary">¿Quiénes somos?</a> -->
+
+      <!-- ▼ QUIÉNES SOMOS CON SUBMENÚ -->
+<div class="relative group">
+  <a href="quienesSomos.html"
+     class="flex items-center gap-1 hover:text-primary">
+    ¿Quiénes somos?
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+
+  <!-- SUBMENÚ -->
+  <div
+    class="absolute top-full left-0 mt-2 w-54
+           bg-white dark:bg-gray-800
+           rounded-lg shadow-lg
+           border border-gray-100 dark:border-gray-700
+           opacity-0 invisible
+           group-hover:opacity-100 group-hover:visible
+           transition-all duration-200 z-50"
+  >
+    <a href="quienes somos/empresas.html"
+       class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+      Empresas y colaboradores
+    </a>
+
+    <a href="quienes somos/finalidad.html"
+       class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+      Finalidad fundacional
+    </a>
+
+    <a href="quienes somos/proyectos.html"
+       class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+      Proyectos
+    </a>
+  </div>
+</div>
+
+
+
       <a href="goblab.html" class="hover:text-primary">GobLab</a>
       <a href="prototipos.html" class="hover:text-primary">Prototipos</a>
       <a href="mentorias.html" class="hover:text-primary">Mentorías</a>
@@ -100,9 +148,9 @@
     </svg>
   </a>
 
-       <!-- SUBMENÚ -->
+      <!-- SUBMENÚ -->
       <div
-        class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+        class="absolute top-full left-0 mt-2 w-55 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
       >
         <a href="transparencia/objeto-social.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -140,6 +188,8 @@
         </a>
       </div>
     </div>
+  
+
 
     </nav>
 
@@ -151,7 +201,7 @@
 
 
 <div class="flex items-center gap-2 md:hidden"> 
-  <a href="pages/contacto.html"
+  <a href="contacto.html"
      class="h-9 px-3
             flex items-center justify-center
             rounded-lg bg-primary
@@ -190,10 +240,16 @@
   <nav class="flex flex-col divide-y divide-gray-100 text-sm">
 
     <!-- Links principales -->
-    <a href="../index.html"
+    <a href="..index.html"
        class="flex items-center justify-center h-14 font-semibold
               transition-all hover:bg-accent-light hover:text-primary">
       Inicio
+    </a>
+
+     <a href="quienesSomos.html"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      ¿Quiénes somos?
     </a>
 
     <a href="goblab.html"
@@ -220,13 +276,13 @@
       Programa 2026
     </a>
 
-    <a href="#"
+    <a href="blog.html"
        class="flex items-center justify-center h-14 font-semibold
               transition-all hover:bg-accent-light hover:text-primary">
       Blog
     </a>
 
-    <a href="#"
+    <a href="transparencia.html"
        class="flex items-center justify-center h-14 font-semibold
               transition-all hover:bg-accent-light hover:text-primary">
       Transparencia
@@ -275,6 +331,7 @@
 
 
 
+
 <!-- ================= CONTENIDO ================= -->
 
 
@@ -282,6 +339,7 @@
 
 <!-- Hero Section -->
 <section class="relative flex flex-col items-center justify-center overflow-hidden bg-background-light dark:bg-background-dark pt-10 pb-16 md:py-20 lg:py-24">
+  
 <div class="absolute inset-0 z-0 opacity-10 dark:opacity-20 pointer-events-none" style="background-image: radial-gradient(#137fec 1px, transparent 1px); background-size: 32px 32px;"></div>
 <div class="layout-content-container flex flex-col max-w-[1100px] w-full px-4 md:px-10 z-10">
 <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-12">
@@ -305,7 +363,10 @@
                                 </button> -->
 
                                 <a href="#prototipos"
-   class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-600 text-white text-base font-bold transition-all shadow-lg shadow-primary/20">
+   class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary 
+   hover:bg-primary-dark
+
+   text-white text-base font-bold transition-all shadow-lg shadow-primary/20">
   Explorar Prototipos
 </a>
 

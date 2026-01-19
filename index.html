@@ -71,7 +71,7 @@
 
    <!-- LOGO -->
     <div class="flex items-center gap-3">
-      <a href="../index.html">
+      <a href="index.html">
         <img 
           src="https://res.cloudinary.com/dmtoxfuax/image/upload/v1768399818/logo-fe_1_cql7m6.png" 
           alt="Fundación Emprende Canarias"
@@ -84,6 +84,51 @@
     <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-8">
       <a href="index.html" class="hover:text-primary">Inicio</a>
+
+
+      <!-- <a href="#" class="hover:text-primary">¿Quiénes somos?</a> -->
+
+      <!-- ▼ QUIÉNES SOMOS CON SUBMENÚ -->
+<div class="relative group">
+  <a href="pages/quienesSomos.html"
+     class="flex items-center gap-1 hover:text-primary">
+    ¿Quiénes somos?
+    <svg class="w-4 h-4 transition-transform group-hover:rotate-180"
+         fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </a>
+
+  <!-- SUBMENÚ -->
+  <div
+    class="absolute top-full left-0 mt-2 w-54
+           bg-white dark:bg-gray-800
+           rounded-lg shadow-lg
+           border border-gray-100 dark:border-gray-700
+           opacity-0 invisible
+           group-hover:opacity-100 group-hover:visible
+           transition-all duration-200 z-50"
+  >
+    <a href="pages/quienes somos/empresas.html"
+       class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+      Empresas y colaboradores
+    </a>
+
+    <a href="pages/quienes somos/finalidad.html"
+       class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+      Finalidad fundacional
+    </a>
+
+    <a href="pages/quienes somos/proyectos.html"
+       class="block px-4 py-2 text-sm hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
+      Proyectos
+    </a>
+  </div>
+</div>
+
+
+
       <a href="pages/goblab.html" class="hover:text-primary">GobLab</a>
       <a href="pages/prototipos.html" class="hover:text-primary">Prototipos</a>
       <a href="pages/mentorias.html" class="hover:text-primary">Mentorías</a>
@@ -105,7 +150,7 @@
 
       <!-- SUBMENÚ -->
       <div
-        class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+        class="absolute top-full left-0 mt-2 w-55 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
       >
         <a href="pages/transparencia/objeto-social.html"
            class="block px-4 py-2 text-sm text-[#111418] dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-700">
@@ -201,6 +246,12 @@
       Inicio
     </a>
 
+     <a href="#"
+       class="flex items-center justify-center h-14 font-semibold
+              transition-all hover:bg-accent-light hover:text-primary">
+      ¿Quiénes somos?
+    </a>
+
     <a href="pages/goblab.html"
        class="flex items-center justify-center h-14 font-semibold
               transition-all hover:bg-accent-light hover:text-primary">
@@ -281,9 +332,17 @@
 
 
 <!-- ================= CONTENIDO ================= -->
-<section class="relative bg-surface-light dark:bg-surface-dark py-12 lg:py-24 overflow-hidden">
+
+<main class="flex-grow bg-background-light dark:bg-background-dark"> 
+
+<section class="relative py-12 lg:py-24 overflow-hidden">
+
+<!-- <section class="relative bg-surface-light dark:bg-surface-dark py-12 lg:py-24 overflow-hidden"></section> -->
+
 <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+
 <div class="flex flex-col lg:flex-row gap-16 items-center">
+
 <div class="flex-1 flex flex-col gap-8 text-left max-w-2xl">
 <div class="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-primary w-fit">
 <span class="w-2 h-2 rounded-full bg-primary mr-2"></span>
@@ -447,7 +506,7 @@
 </div>
 <div class="bg-white/5 border border-white/10 p-8 rounded-2xl min-w-[240px] backdrop-blur-sm hover:bg-white/10 transition-colors">
 <span class="material-symbols-outlined text-yellow-400 text-3xl mb-4 block">lightbulb</span>
-<div class="text-4xl font-bold mb-1">+9</div>
+<div class="text-4xl font-bold mb-1">9+</div>
 <div class="text-xs font-bold text-gray-400 uppercase tracking-widest">Prototipos IA</div>
 </div>
 </div>
@@ -497,7 +556,7 @@
 </div>
 </section>
 
-
+</main>
 
 <!-- Footer -->
 <footer class="bg-background-light dark:bg-background-dark border-t border-[#f0f2f4] dark:border-[#2a3441] py-10">
